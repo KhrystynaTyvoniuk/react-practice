@@ -1,20 +1,22 @@
 import React from 'react';
 import "./Weather.css"
+
+
 export default function Weather (){
     return (
         <div className='weather'>
 
             <form>
                 <div className='row'>
-<div className='col-9'>
+<div className='col-10'>
 <input type="search"
 placeholder='Enter a city...'
 className='searchInput'
 />
 </div>
-<div className='col-3'>
+<div className='col-2'>
 <input type="submit"
-value="Search"
+value= 'search'
 className='button'
 />
 </div>
@@ -31,8 +33,8 @@ className='button'
             <img src='https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png' width='100px'/>
             
             </div>
-            <div className='col-4 text-center'>
-            <h2> <span className='bold temp'>6</span>°C</h2>
+            <div className='col-4 '>
+            <h2 className=' temp'> 6<span  className='small'> °C | °F</span></h2>
             </div>
           
          
