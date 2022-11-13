@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Oswald', sans-serif;
+}
+ul{
+   list-style: none;
+}
+.weather{
+    max-width: 600px;
+    margin: 0px auto;
+}
+form{
+    padding-top: 60px ;
+}
+h1{
+    font-size: 4rem;
+    
+  }
+ input {
+    padding: 0.7rem 1.6rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.1);
+    color: #f8f8f8;
+  }
+  ::placeholder {
+    color: #f8f8f8;
+  }
+  .searchInput{
+    padding: 0.7rem 7rem;
+  }
+  .button{
+    background: rgba(255,255,255,0.1);
+  }
+  .main{ 
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 16px;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  ;
+  }
+  .row{
+    align-items: center;
+  }
+  .weather_description{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.weather_description ul{
+  display: flex;
+  list-style: none;
+}
+.weather_description li{
+  padding: 1rem;
+}
+
+.bold{
+  font-weight: 700;
+}
+.temp{
+    font-size: 4.6rem;
+}
+.info{
+    font-weight: 700;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    color: rgba(255,255,255,0.5);
+}
