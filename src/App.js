@@ -6,8 +6,8 @@ function App() {
     <div className="App">
      <div className='container'>
     
-   <Weather />
-   
+   <Weather defaultCity="Kyiv" />
+
      </div>
     </div>
   );
