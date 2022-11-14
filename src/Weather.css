@@ -40,9 +40,10 @@ h1{
 
   }
   .small{
-    position: absolute;
-    font-size: 1.5rem;
+    position: relative;
+    font-size: 1rem;
     color: #f8f8f8d7;
+    top: -40px;
 
   }
   .button{
@@ -92,4 +93,8 @@ h1{
     writing-mode: vertical-rl;
     text-orientation: sideways;
     color: rgba(255,255,255,0.5);
+}
+a{
+  text-decoration: none;
+  color: aquamarine;
 }

@@ -7,7 +7,7 @@ function App() {
      <div className='container'>
     
    <Weather defaultCity="Kyiv" />
-<footer>
+<footer className='text-center'>
 This project was coded by{" "}
           <a
             href="https://www.instagram.com/khrystyna.dev/"
