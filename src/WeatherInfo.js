@@ -10,31 +10,28 @@ export default function WeatherInfo(props){
                 <div className='row'>
                    
                    
-                    <div className='col-3 d-flex flex-direction-column justify-content-start align-items-center text-center'>
-                      
-                        <p className='info text-capitalize'>{props.data.description}</p>
-                <img src={props.data.iconUrl} alt={props.data.description} width='100px'/>
+                    
                 
-                </div>
-                <div className='col-5 '>
-                <WeatherTemperature celcius={props.data.temperature} />
-                
-                </div>
               
              
-                <div className='col-4 d-flex justify-content-evenly align-items-center'>
+                <div className='col-5 d-flex justify-content-start align-items-center'>
                         <div>
                 <h1>{props.data.city}</h1>
                 <p><FormattedDate date={props.data.date} /></p></div>
            
                     </div>
-                    
+                    <div className='col-4 d-flex justify-content-end align-items-center text-center'>
+                <WeatherTemperature celcius={props.data.temperature} />
+                
+                </div>
+                
                 </div>
     
                 <div className='row'>
                   
-                <div className='weather_description mt-5'>
-                <ul>
+                <div className='weather_description'>
+                <div className='col-9 d-flex flex-direction-column justify-content-start align-items-center text-center'>
+                <ul >
                   <li>
                     Pressure
                      <p className='bold pt-2'> {props.data.pressure} </p> 
@@ -48,6 +45,13 @@ export default function WeatherInfo(props){
                     <p className='bold pt-2'> {props.data.wind}km/h</p> 
                     </li>
                 </ul>
+                </div>
+                <div className='col-3 d-flex flex-direction-column justify-content-start align-items-center text-center'>
+                      
+                      <p className='info text-capitalize'>{props.data.description}</p>
+              <img src={props.data.iconUrl} alt={props.data.description} width='100px'/>
+              
+              </div>
                 </div>
     </div>
                 </div>

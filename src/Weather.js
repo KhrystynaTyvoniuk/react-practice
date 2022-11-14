@@ -21,7 +21,7 @@ export default function Weather(props) {
             pressure: response.data.main.pressure,
             iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     });
-       
+    
     }
 
     function handleSubmit(event) {
