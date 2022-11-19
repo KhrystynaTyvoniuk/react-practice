@@ -10,13 +10,13 @@ export default function WeatherInfo(props){
                 <div className='row'>
 
              
-                <div className='col-5 d-flex justify-content-start align-items-center'>
+                <div className='col-sm-5 d-flex justify-content-start align-items-center'>
                         <div>
                 <h1>{props.data.city}</h1>
                 <FormattedDate date={props.data.date} /></div>
            
                     </div>
-                    <div className='col-4 d-flex justify-content-end align-items-center text-center'>
+                    <div className='col-sm-4 d-flex justify-content-end align-items-center text-center'>
                 <WeatherTemperature celcius={props.data.temperature} />
                 
                 </div>
@@ -25,20 +25,20 @@ export default function WeatherInfo(props){
     
                 <div className='row'>
                   
-                <div className='weather_description'>
-                <div className='col-9 d-flex flex-direction-column justify-content-start align-items-center text-center'>
+                <div className='weather_description mt-3'>
+                <div className='col-9  mob-d d-flex flex-direction-column justify-content-start align-items-center text-center'>
                 <ul >
                   <li>
                     Pressure
-                     <p className='bold pt-2'> {props.data.pressure} </p> 
+                     <p className='bold  pt-2'> {props.data.pressure} </p> 
                   </li>
                   <li>
                     Humidity: 
-                   <p className='bold pt-2'> {props.data.humidity}%</p> 
+                   <p className='bold  pt-2'> {props.data.humidity}%</p> 
                     </li>
                     <li>
                     Wind: km/h
-                    <p className='bold pt-2'> {props.data.wind}km/h</p> 
+                    <p className='bold  pt-2'> {props.data.wind}km/h</p> 
                     </li>
                 </ul>
                 </div>

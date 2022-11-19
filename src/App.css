@@ -19,5 +19,16 @@
   }
   .container{
     width: 100vw;
+    height: 100vh;
     margin: 0px auto;
   }
+
+@media (max-width: 576px) {
+  .App {
+    width: 100vw;
+    height: 150vh;
+  }
+  .App::before{
+    height: 150vh; 
+  }
+}
