@@ -8,11 +8,7 @@ export default function WeatherInfo(props){
         <div className='main'>
     
                 <div className='row'>
-                   
-                   
-                    
-                
-              
+
              
                 <div className='col-5 d-flex justify-content-start align-items-center'>
                         <div>
